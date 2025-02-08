@@ -5,7 +5,9 @@ URL : https://docs.aws.amazon.com/eks/latest/userguide/cni-custom-network-tutori
 Original template : https://github.com/aws-ia/terraform-aws-eks-blueprints/tree/main/patterns/karpenter-mng
 
 ### How to use this example
+
 terraform init
+
 kubectl run -it busybox --image=busybox --restart=Never -- /bin/sh #for testing deployment pods
 
 
