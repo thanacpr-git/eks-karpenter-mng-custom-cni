@@ -19,6 +19,7 @@ Create subnet sg-02091518c4aaa44b1 ex-karpenter-mng-pod-ap-southeast-1a for 3 su
 
 
 kubectl set env daemonset aws-node -n kube-system AWS_VPC_K8S_CNI_EXTERNALSNAT=false
+
 kubectl set env daemonset aws-node -n kube-system AWS_VPC_K8S_CNI_CUSTOM_NETWORK_CFG=true
 
 
