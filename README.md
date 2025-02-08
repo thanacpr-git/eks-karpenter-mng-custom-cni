@@ -2,6 +2,7 @@
 Example for having Karpenter with custom CNI
 
 URL : https://docs.aws.amazon.com/eks/latest/userguide/cni-custom-network-tutorial.html
+Original template : https://github.com/aws-ia/terraform-aws-eks-blueprints/tree/main/patterns/karpenter-mng
 
 ### How to use this example
 terraform init
