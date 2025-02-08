@@ -3,12 +3,12 @@ Example for having Karpenter with custom CNI
 
 URL : https://docs.aws.amazon.com/eks/latest/userguide/cni-custom-network-tutorial.html
 
-#How to use this example
+### How to use this example
 terraform init
 kubectl run -it busybox --image=busybox --restart=Never -- /bin/sh #for testing deployment pods
 
 
-Normal step using cli :
+### Normal step using cli :
 Create security group : sg-02091518c4aaa44b1
 
 
@@ -64,6 +64,6 @@ kubectl set env daemonset aws-node -n kube-system ENI_CONFIG_LABEL_DEF=topology.
 kubectl describe daemonset aws-node -n kube-system | grep ENI_CONFIG_ANNOTATION_DEF
 
 
-#Deploy pods for testing
+### Deploy pods for testing
 
 kubectl run -it busybox --image=busybox --restart=Never -- /bin/sh
