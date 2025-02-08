@@ -3,6 +3,11 @@ Example for having Karpenter with custom CNI
 
 URL : https://docs.aws.amazon.com/eks/latest/userguide/cni-custom-network-tutorial.html
 
+#How to use this example
+terraform init
+kubectl run -it busybox --image=busybox --restart=Never -- /bin/sh #for testing deployment pods
+
+
 Normal step using cli :
 Create security group : sg-02091518c4aaa44b1
 
