@@ -68,3 +68,12 @@ kubectl describe daemonset aws-node -n kube-system | grep ENI_CONFIG_ANNOTATION_
 ### Deploy pods for testing
 
 kubectl run -it busybox --image=busybox --restart=Never -- /bin/sh
+
+### Remove config from kubectl
+
+#### Delete the context
+kubectl config delete-context arn:aws:eks:ap-southeast-1:526169475020:cluster/ex-eks-mng-custom-cni
+#### Delete the cluster
+kubectl config delete-cluster arn:aws:eks:ap-southeast-1:526169475020:cluster/ex-eks-mng-custom-cni
+#### Delete the user
+kubectl config unset users.arn:aws:eks:ap-southeast-1:526169475020:cluster/ex-eks-mng-custom-cni
