@@ -6,10 +6,10 @@ Original template : https://github.com/aws-ia/terraform-aws-eks-blueprints/tree/
 
 ### How to use this example
 
+```
 terraform init
-
 kubectl run -it busybox --image=busybox --restart=Never -- /bin/sh #for testing deployment pods
-
+```
 
 ### Normal step using cli :
 
